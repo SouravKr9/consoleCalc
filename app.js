@@ -1,30 +1,28 @@
-class Calculator {
-    result = 0;
+const calculator = {
+    result : 0,
 
-    add(num){
+    add : function(num){
         this.result = this.result + parseInt(num);
         return this;
-    }
+    },
 
-    subtract(num){
+    subtract : function(num){
         this.result = this.result - parseInt(num);
         return this;
-    }
+    },
 
-    multiply(num){
+    multiply : function(num){
         this.result = this.result * parseInt(num);
         return this;
-    }
+    },
 
-    divide(num){
+    divide : function(num){
         this.result = this.result / parseInt(num);
         return this;
-    }
+    },
 
-    equals(){
+    equals : function(){
         console.log(this.result);
         return this;
     }
-}
-
-calc = new Calculator();
+};
